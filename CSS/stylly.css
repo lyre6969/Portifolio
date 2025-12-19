@@ -59,3 +59,47 @@ section {
   min-height: 100vh;
   background: radial-gradient(circle, #661264 0%, #000000 100%);
 }
+
+@font-face {
+  font-family: "Kavoon";
+  src: url(../fonts/Kavoon-Regular.ttf);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+.h1_nav {
+  font-family: "Kavoon";
+  color: white;
+  font-size: 24px;
+}
+.nav_a {
+  font-family: "Kavoon";
+  color: white;
+  font-size: 24px;
+}
+
+/* 1. O container pai precisa ter position: relative */
+.right-side {
+  position: relative;
+
+  width: 50%;
+}
+
+/* 2. As imagens ficam "flutuando" sobre o fundo */
+.spotify-container {
+  position: absolute; /* Isso solta as imagens do fundo */
+  top: -800px; /* Ajuste aqui para subir ou descer */
+  right: -600px; /* Distância da borda direita */
+
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  z-index: 10; /* Garante que fique em cima de tudo */
+}
+
+.sopt1 img,
+.sopt_2 img {
+  display: block; /* Remove espaços extras */
+  width: 664px;
+}
