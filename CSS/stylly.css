@@ -24,11 +24,30 @@
   display: flex;
   gap: 24px;
 }
-
-.link_nav {
+a {
   text-decoration: none;
 }
 ul {
   display: flex;
   gap: 24px;
+  list-style: none;
+}
+section {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.bg-1,
+.bg-2,
+.bg-3,
+.bg-4 {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #661264 0%, #000000 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-5 {
+  min-height: 100vh;
+  background: radial-gradient(circle, #661264 0%, #000000 100%);
 }
