@@ -67,7 +67,20 @@ section {
   font-style: normal;
   font-display: swap;
 }
-
+@font-face {
+  font-family: "Knewave";
+  src: url(../fonts/Knewave-Regular.ttf);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Kings";
+  src: url(../fonts/Kings-Regular.ttf);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 .h1_nav {
   font-family: "Kavoon";
   color: white;
@@ -90,7 +103,7 @@ section {
 .spotify-container {
   position: absolute; /* Isso solta as imagens do fundo */
   top: -800px; /* Ajuste aqui para subir ou descer */
-  right: -600px; /* Distância da borda direita */
+  right: -530px; /* Distância da borda direita */
 
   display: flex;
   flex-direction: column;
@@ -101,5 +114,24 @@ section {
 .sopt1 img,
 .sopt_2 img {
   display: block; /* Remove espaços extras */
-  width: 664px;
+  width: 600px;
+}
+
+.titulo-sobre {
+  position: absolute; /* Isso solta as imagens do fundo */
+  top: -790px; /* Ajuste aqui para subir ou descer */
+  right: -65px; /* Distância da borda direita */
+  font-family: "Knewave";
+  z-index: 11;
+  color: white;
+  font-size: 40px;
+}
+
+.paragrafo_sobre {
+  font-family: "Kings";
+  color: white;
+  position: absolute; /* Isso solta as imagens do fundo */
+  top: -700px; /* Ajuste aqui para subir ou descer */
+  right: -340px; /* Distância da borda direita */
+  z-index: 11;
 }
